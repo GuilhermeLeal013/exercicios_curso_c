@@ -1,0 +1,34 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    int codigo;
+    
+    printf("digite o codigo do produto:");
+    scanf("%d", &codigo);
+    
+    switch(codigo)
+    {
+          case 0:
+                 printf("chaleira");
+                 break;
+          case 1:
+                 printf("panela");
+                 break;
+          case 2:
+                 printf("prato");
+                 break;
+          case 3:
+                 printf("caneca");
+                 break;
+         default:
+                 printf("invalido");
+                 break;
+        
+    }
+    
+    
+
+    return 0;
+}

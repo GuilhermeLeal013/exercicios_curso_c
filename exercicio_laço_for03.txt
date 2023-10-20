@@ -1,0 +1,20 @@
+#include <stdlib.h>
+#include <stdio.h>
+
+     /* faça um programa que escreva na tela o somatorio dos numeros de 0 ate 100
+     ou seja:
+             0+1+2+3+4+5...   */
+
+
+int main()
+{
+    int i, soma = 0;
+    
+    for( i = 0; i <= 100; i++)
+               soma = soma + i;
+               
+     printf("somatorio: %d\n", soma);
+    
+
+    return 0;
+}

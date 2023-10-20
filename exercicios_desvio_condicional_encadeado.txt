@@ -1,0 +1,36 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    char nome[80];
+    float salbruto, txinss, desconto, salliquido;
+    
+    printf("digite o nome do funcionario:");
+    gets(nome);
+    
+    printf("digite o seu salario bruto:");
+    scanf("%f", &salbruto);
+    
+    if(salbruto <= 1000)
+                txinss = 8;
+    else 
+    if(salbruto <= 2000)
+                txinss = 9;
+    else
+                txinss = 10;
+                
+    desconto = salbruto * txinss / 100;          
+    salliquido = salbruto - desconto;
+    
+    printf("\n\n");      /* usado para pular uma linha */
+    printf("nome do funcionario......: %s \n", nome);
+    printf("salario bruto ...........: R$ %10.2f \n", salbruto);
+    printf("taxa de INSS ............: %.2f%% \n", txinss);
+    printf("desconto INSS ...........: R$ %10.2f \n", desconto);
+    printf("salario liquido .........: R$ %10.2f \n", salliquido);
+    
+    
+
+    return 0;
+}

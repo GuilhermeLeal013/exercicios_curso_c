@@ -1,0 +1,27 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    char nome[80];
+    float nota1, nota2, media;
+    
+    printf("digite o nome do aluno:");
+    gets(nome);
+    printf("digite a primeira nota:");
+    scanf("%f", &nota1);
+    printf("digite a segunda nota:");
+    scanf("%f", &nota2);
+    
+    media = (nota1 + nota2) / 2;
+    
+    printf("a media do aluno: %s foi: %.2f \n", nome,media);
+    
+    if(media >=6)
+    printf("o aluno foi aprovado \n");
+    else
+    printf("o aluno nao foi aprovado \n");
+    
+
+    return 0;
+}

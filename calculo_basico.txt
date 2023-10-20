@@ -1,0 +1,21 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+/* comentario de varias linhas */
+
+int main()
+{
+  int valorA, valorB, resultado; /* declaracao de variaveis */
+  
+  printf("digite um valor: ");   /* entrada de dados */
+  scanf("%d", &valorA);
+  printf("digite outro valor: ");
+  scanf("%d", &valorB);
+  
+  resultado = valorA + valorB;   /* proccessamento de dados */
+  
+  printf("Resultado: %d \n", resultado);  /* saidas de dados*/
+  printf("%d + %d = %d \n", valorA, valorB, resultado);
+  
+    return 0;
+}

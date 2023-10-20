@@ -1,0 +1,17 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+
+int main()
+{ 
+    int numero;                    /* declaracao de variavel */
+    
+    printf("digite um numero:");   /* entada de dados */
+    scanf("%d", &numero);
+    
+    if(numero > 0)                 /* se o numero for mair do q zero*/
+   
+   printf("O numero que foi digitado %.2d, é positivo \n");
+    
+    return 0;
+}

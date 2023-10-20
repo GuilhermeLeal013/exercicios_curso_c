@@ -1,0 +1,23 @@
+#include <stdlib.h>
+#include <stdio.h>
+
+int main()
+{
+    
+    int numero, resultado;
+    int i;
+    
+    for ( i = 0; i < 5 ; i++ )  /* laço de repetição tem uma quantidade de repetiçoes */
+    
+    {
+  
+           printf("digite um numero:");
+           scanf("%d", &numero);
+           resultado = numero * 3;
+           printf("o resultado foi: %d \n", resultado);
+    
+    }
+    
+
+    return 0;
+}

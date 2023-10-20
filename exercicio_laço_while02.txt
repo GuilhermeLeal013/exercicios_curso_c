@@ -1,0 +1,42 @@
+#include <stdlib.h>
+#include <stdio.h>
+ 
+         /* faça um programa que leia numeros até que o usuario digite o numero 0 
+            no final do programa apresentar:
+            >= o somatorio dos numeros positivos
+            >= a media dos numeros negativos     */
+ 
+ 
+int main()
+{
+   int numero, somapos, somaneg, contneg, media;
+   
+   numero = 7;
+   somapos = somaneg = contneg = 0;
+   
+   while(numero != 0)
+   
+   {
+       printf("digite um numero");
+       scanf("%d", &numero);
+       
+       if(numero >= 0)
+        {
+          somapos = somapos + numero;
+        }
+       else
+        { 
+          somaneg = somaneg + numero;
+          contneg++;
+        }
+  
+   }
+   
+   media = somaneg / contneg;
+   
+   printf("somatorio dos numeros positivos: %d \n", somapos);
+   printf("media dos negativos............: %d \n", media);
+   
+   
+    return 0;
+}

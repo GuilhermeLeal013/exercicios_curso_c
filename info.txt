@@ -1,0 +1,9 @@
+  /* operadores de comparação */
+      
+      >  ==> maior que
+      >= ==> menor ou igual a
+      <  ==> menor d que
+      <  ==> menor ou igual a
+      == ==> igual a
+      !> ==> diferente
+      /*

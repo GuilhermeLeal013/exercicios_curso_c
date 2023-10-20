@@ -1,0 +1,25 @@
+#include <stdlib.h>
+#include <stdio.h>
+
+         /* faça um programa que leia numeros até que o usuario digite -1
+            no final, antes de encerrar o programa, mostrar o somatorio dos numeros digitados */
+
+int main()
+{
+   int numero, soma;
+   soma = numero = 0;
+   
+   while(numero != -1)   /* laço de repetiçao com uma quantidade indeterminada de repetiçao */
+   
+   {
+       printf("diite um numero");
+       scanf("%d", &numero);
+       
+       if(numero != -1)
+       soma = soma + numero;
+
+   }
+       printf("somatorio dos numeros digitados: %d \n", soma);
+   
+    return 0;
+}
