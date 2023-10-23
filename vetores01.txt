@@ -1,0 +1,30 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    /* declaração de um vetor */
+    float notas[6];
+    int i;
+    float media = 0;
+    /* lendo dados para um vetor */
+    for(i = 0; i< 6; i++)
+       
+       {
+         printf("digite a nota %d:", i+1);
+         scanf("%f", &notas[i]);
+         media = media +notas[i];     /* somando as notas */
+       }
+  
+         media = media / 6;          /* calculando a media */
+  
+        /* mostrando os dados armazenados em um vetor */
+        for(i = 0; i<6; i++)
+        {
+         printf("nota %d armazenada: %.2f \n",i+1, notas[i]);
+         
+        }
+         printf("a media do aluno foi %.2f \n", media);
+   
+   return 0;
+}

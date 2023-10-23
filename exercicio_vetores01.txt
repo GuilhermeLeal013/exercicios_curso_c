@@ -1,0 +1,28 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    /* declaração do vetor */
+    int vetor [10], soma, i;
+    
+    soma = 0;
+    /* leitura do vetor */
+    for(i= 0; i< 10; i++)
+    
+    {
+        printf("digite o elemento %d do vetor:", i + 1);
+        scanf("%d", &vetor[i]);
+        soma = soma + vetor [i];
+    }
+           /* mostrar o vetor */
+    for(i =0; i< 10; i++)
+    
+     {
+      printf("elemento %d do vetor %d \n", i + 1, vetor[i]);
+     }     
+     
+      printf("a soma dos elementos do vetor: %d \n", soma);
+   
+   return 0;
+}

@@ -1,0 +1,56 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    int opcao, contpan, contcha, contpra;
+    
+    contpan = contcha = contpra = 0;
+    
+    do
+    
+    {
+      
+      system("cls");
+      printf("menu de opcoes \n");
+      printf("0 - encerra o programa \n");
+      printf("1 - incluir uma panela no estoque \n");
+      printf("2 - incluir uma chaleira no estoque \n");
+      printf("3 - incluir um prato no estoque \n");
+      printf("4 - relatorio de inclusoes \n");
+      printf("digite uma opcao:");
+      scanf("%d", &opcao);
+      
+      switch(opcao)
+     {
+        case 0:
+              printf("encerrando o programa");
+              break;
+        case 1:
+              contpan++;
+              break;
+        case 2:
+              contcha++;
+              break;
+        case 3:
+              contpra++;
+              break;
+        case 4:
+              printf("relatorio de inclusoes \n");
+              printf("panela:      %d \n", contpan);
+              printf("chaleira:    %d \n", contcha);
+              printf("prato:       %d \n", contpra);
+              system("pause");
+              break;
+        default:
+              printf("opcao invalida");
+              system("pause");
+              break;
+        
+     }
+      
+    }
+       while (opcao !=0);
+ 
+    return 0;
+}

@@ -1,0 +1,36 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main() {
+    /* declaração da matriz */
+    float notas[5][6];     /* 5 alunos e 6 notas escolares */
+    float media;
+    int i, j;              /* índices para linha e coluna */
+
+    /* lendo dados para a matriz */
+    for (i = 0; i < 5; i++) 
+    {   
+        /* lendo as informações de cada aluno */
+        for (j = 0; j < 6; j++) 
+        
+        {    /* lendo as informações de cada nota de um aluno */
+            printf("Digite a nota %d do aluno %d: ", j + 1, i + 1);
+            scanf("%f", &notas[i][j]);          /* Use %f para ler números em ponto flutuante */
+        }
+    }
+
+    /* mostrando dados da matriz e calculando média dos alunos */
+    for (i = 0; i < 5; i++)                    /* aluno */
+    {
+        media = 0;
+        for (j = 0; j < 6; j++)               /* nota */
+        
+        {    printf("A nota %d do aluno %d foi %.2f\n", j + 1, i + 1, notas[i][j]);
+            media = media + notas[i][j];
+        }
+        media = media / 6;
+        printf("A média do aluno foi: %.2f\n\n", media);
+    }
+
+    return 0;
+}
